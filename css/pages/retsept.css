@@ -1,0 +1,22 @@
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    padding: 30px;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat( 3,1fr);
+    gap: 30px;
+    padding-top: 200px;
+}
+@media (max-width:750px) {
+    .navbar{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:300px) {
+    .navbar {
+        grid-template-columns: auto;
+    }
+}
